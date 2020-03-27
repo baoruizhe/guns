@@ -21,8 +21,8 @@ public class ApiAuthTest extends BaseController {
     @Autowired
     private RedisUtil redisUtil;
 
-    @RequestMapping("/test")
-    public Object test() {
+    @RequestMapping("/redisTest")
+    public Object redisTest() {
         for (int i = 0; i < 10; i++) {
             redisUtil.set(i+"",i+"");
         }
