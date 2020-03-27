@@ -26,7 +26,7 @@ public class ApiAuthTest extends BaseController {
         for (int i = 0; i < 10; i++) {
             redisUtil.set(i+"",i+"");
         }
-
+        System.out.println("开发中......");
         for (int i = 0; i < 10; i++) {
             System.out.println(redisUtil.get(i+""));
         }
